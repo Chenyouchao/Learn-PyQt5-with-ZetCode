@@ -3,7 +3,9 @@ from PyQt5.QtWidgets import QApplication, QWidget, QDesktopWidget
 
 class Example(QWidget):
     def __init__(self):
-        super().__init__()
+        # __init__()被重写, 保证集成父类构造器
+        # 相当于QObject.__init__(self), 这里的self是子类QWidget的实例
+        super().__init__()  # 此处可省略self
 
         self.initUI()
 
