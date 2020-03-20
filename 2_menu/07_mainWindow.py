@@ -21,7 +21,8 @@ class Example(QMainWindow):
         exitAct = QAction(QIcon(iconFile), 'Exit', self)
         exitAct.setShortcut('Ctrl+Q')
         exitAct.setStatusTip("Exit application")
-        exitAct.triggered.connect(self.close)
+        exitAct.triggered.connect(self.close)   
+        # QMainWindow.close(), 同qApp.quit(), QCoreApplication.instance().quit()
 
         self.statusBar()    # 无需向statusBar上再添加部件
 
