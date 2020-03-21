@@ -17,7 +17,7 @@ class Example(QWidget):
         author = QLabel('Author')
         review = QLabel('Review')
 
-        titleEdit = QLineEdit()
+        titleEdit = QLineEdit()     # ? 通过grid布局加入self, 故可省略self, 6.04
         authorEdit = QLineEdit()
         reviewEdit = QTextEdit()
 
