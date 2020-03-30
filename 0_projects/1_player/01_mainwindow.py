@@ -266,14 +266,14 @@ class MainUI(QMainWindow):
         self.left_close.setFixedSize(20, 20)
 
         self.left_mini.setStyleSheet('''
-                                        QPushButton{
-                                            background: #6DDF6D;
-                                            border-radius: 5px;
-                                        }
-                                        QPushButton:hover{
-                                            background: green;
-                                        }
-                                      ''')
+            QPushButton{
+                background: #6DDF6D;
+                border-radius: 5px;
+            }
+            QPushButton:hover{
+                background: green;
+            }
+        ''')
 
         self.left_visit.setStyleSheet('''
             QPushButton{
